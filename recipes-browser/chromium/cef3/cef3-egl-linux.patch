@@ -1,0 +1,17 @@
+diff -ur a/ui/ozone/platform/egl/egl.gypi b/ui/ozone/platform/egl/egl.gypi
+--- a/ui/ozone/platform/egl/egl.gypi	2014-10-28 10:22:27.000000000 +0100
++++ b/ui/ozone/platform/egl/egl.gypi	2015-10-21 17:29:48.403889647 +0200
+@@ -40,6 +40,13 @@
+               '-lGLESv2',
+             ],
+       },
++      'conditions': [
++          ['OS=="linux"', {
++            'defines': [
++              'LINUX',
++            ],
++	   }],
++      ],
+     },
+   ],
+ }
