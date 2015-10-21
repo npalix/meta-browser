@@ -6,12 +6,12 @@ RDEPENDS_${PN} += "pango cairo fontconfig pciutils pulseaudio freetype fontconfi
 
 SRCREV_tools = "99bcb0e676eb396bcf8e1af3903aa4b578aeeee0"
 SRCREV_cef = "bbad53dfca9f98dddcb31a590410fece0a4f0234"
-SRCREV_egl = "a5b81b7617ba6757802b9b5f8c950034d5f961ec"
+SRCREV_egl = "44870bcd3f6bba93e8e1ace9219345b22b809e59"
 SRCREV_FORMAT = "cef_egl_tools"
 
 SRC_URI = "http://people.linaro.org/~zoltan.kuscsik/chromium-browser/chromium_rev_${PV}.tar.xz \
            git://github.com/kuscsik/chromiumembedded.git;protocol=https;destsuffix=src/cef;branch=aura;name=cef \
-           git://github.com/kuscsik/ozone-egl.git;protocol=https;destsuffix=src/ui/ozone/platform/egl;branch=master;name=egl \
+           git://github.com/npalix/ozone-egl.git;protocol=https;destsuffix=src/ui/ozone/platform/egl;branch=master;name=egl \
            git://chromium.googlesource.com/chromium/tools/depot_tools.git;protocol=https;destsuffix=depot_tools;branch=master;name=tools \
            file://01_get_svn_version_from_LASTCHANGE.patch \
 	   file://cef-simple \
